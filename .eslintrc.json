@@ -1,0 +1,33 @@
+{
+  "plugins": ["@typescript-eslint", "import", "react", "react-hooks", "prettier"],
+  "extends": [
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 9,
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "eslint-comments/no-use": "off",
+    "import/no-namespace": "off",
+    "no-unused-vars": "off",
+    "semi": "off",
+    "no-console": "error",
+    "react/prop-types": "off",
+    "react/no-children-prop": "off"
+  },
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "settings": {
+    "react": {
+      "version": "16.13.1"
+    }
+  }
+}
