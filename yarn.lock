@@ -1817,6 +1817,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/styled-jsx@npm:2.2.8":
+  version: 2.2.8
+  resolution: "@types/styled-jsx@npm:2.2.8"
+  dependencies:
+    "@types/react": "*"
+  checksum: 3/4066e48c71d7d1c10ee77115522830cb11dec621d1555340b03cc2b48c5954c3124a436d5cf59e62f6226cc1704919c828a332fda4a9f997014f2d73c7d33f3f
+  languageName: node
+  linkType: hard
+
 "@typescript-eslint/eslint-plugin@npm:^3.1.0":
   version: 3.1.0
   resolution: "@typescript-eslint/eslint-plugin@npm:3.1.0"
@@ -3739,6 +3748,7 @@ __metadata:
     "@types/ramda": 0.27.6
     "@types/react": 16.9.35
     "@types/react-dom": 16.9.8
+    "@types/styled-jsx": 2.2.8
     "@typescript-eslint/eslint-plugin": ^3.1.0
     "@typescript-eslint/parser": ^3.1.0
     eslint: ^7.1.0
@@ -3752,6 +3762,7 @@ __metadata:
     ramda: ^0.27.0
     react: ^16.13.1
     react-dom: ^16.13.1
+    styled-jsx: ^3.3.0
     typescript: ^3.9.3
   languageName: unknown
   linkType: soft
@@ -8666,7 +8677,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"styled-jsx@npm:3.3.0":
+"styled-jsx@npm:3.3.0, styled-jsx@npm:^3.3.0":
   version: 3.3.0
   resolution: "styled-jsx@npm:3.3.0"
   dependencies:
