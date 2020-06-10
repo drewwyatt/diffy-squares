@@ -1,4 +1,9 @@
 import React, { FC } from 'react'
+import StartingNumbers from '../components/starting-numbers'
 
-const Page: FC = () => <h1>Hello, world</h1>
+const Page: FC = () => (
+  <div>
+    <StartingNumbers />
+  </div>
+)
 export default Page
