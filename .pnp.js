@@ -30,6 +30,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     ],
     "fallbackPool": [
       [
+        "@inlet/react-pixi",
+        "virtual:07eee5b63497c2c6f119fa5f9b8800953a4f0498190258d262944c738e8a1370027a6eebcb364b5cb77cef9bb97c12dfd5ba1a3f0b847be146d1dbe9d46cde16#npm:4.1.1"
+      ],
+      [
         "@types/node",
         "npm:14.0.9"
       ],
@@ -78,6 +82,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "virtual:07eee5b63497c2c6f119fa5f9b8800953a4f0498190258d262944c738e8a1370027a6eebcb364b5cb77cef9bb97c12dfd5ba1a3f0b847be146d1dbe9d46cde16#npm:9.4.4"
       ],
       [
+        "pixi.js",
+        "npm:5.2.4"
+      ],
+      [
         "prettier",
         "npm:2.0.5"
       ],
@@ -105,6 +113,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {
           "packageLocation": "./",
           "packageDependencies": [
+            ["@inlet/react-pixi", "virtual:07eee5b63497c2c6f119fa5f9b8800953a4f0498190258d262944c738e8a1370027a6eebcb364b5cb77cef9bb97c12dfd5ba1a3f0b847be146d1dbe9d46cde16#npm:4.1.1"],
             ["@types/node", "npm:14.0.9"],
             ["@types/ramda", "npm:0.27.6"],
             ["@types/react", "npm:16.9.35"],
@@ -117,6 +126,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-react", "virtual:07eee5b63497c2c6f119fa5f9b8800953a4f0498190258d262944c738e8a1370027a6eebcb364b5cb77cef9bb97c12dfd5ba1a3f0b847be146d1dbe9d46cde16#npm:7.20.0"],
             ["eslint-plugin-react-hooks", "virtual:07eee5b63497c2c6f119fa5f9b8800953a4f0498190258d262944c738e8a1370027a6eebcb364b5cb77cef9bb97c12dfd5ba1a3f0b847be146d1dbe9d46cde16#npm:4.0.4"],
             ["next", "virtual:07eee5b63497c2c6f119fa5f9b8800953a4f0498190258d262944c738e8a1370027a6eebcb364b5cb77cef9bb97c12dfd5ba1a3f0b847be146d1dbe9d46cde16#npm:9.4.4"],
+            ["pixi.js", "npm:5.2.4"],
             ["prettier", "npm:2.0.5"],
             ["ramda", "npm:0.27.0"],
             ["react", "npm:16.13.1"],
@@ -1678,6 +1688,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["@inlet/react-pixi", [
+        ["virtual:07eee5b63497c2c6f119fa5f9b8800953a4f0498190258d262944c738e8a1370027a6eebcb364b5cb77cef9bb97c12dfd5ba1a3f0b847be146d1dbe9d46cde16#npm:4.1.1", {
+          "packageLocation": "./.yarn/$$virtual/@inlet-react-pixi-virtual-c2d00c9bda/0/cache/@inlet-react-pixi-npm-4.1.1-c8a0f015dd-3.zip/node_modules/@inlet/react-pixi/",
+          "packageDependencies": [
+            ["@inlet/react-pixi", "virtual:07eee5b63497c2c6f119fa5f9b8800953a4f0498190258d262944c738e8a1370027a6eebcb364b5cb77cef9bb97c12dfd5ba1a3f0b847be146d1dbe9d46cde16#npm:4.1.1"],
+            ["fbjs", "npm:1.0.0"],
+            ["performance-now", "npm:2.1.0"],
+            ["pixi.js", "npm:5.2.4"],
+            ["prop-types", null],
+            ["react", "npm:16.13.1"],
+            ["react-dom", "virtual:07eee5b63497c2c6f119fa5f9b8800953a4f0498190258d262944c738e8a1370027a6eebcb364b5cb77cef9bb97c12dfd5ba1a3f0b847be146d1dbe9d46cde16#npm:16.13.1"],
+            ["react-reconciler", "virtual:c2d00c9bda422fc453d1e1bb40c7b4621fae6cfd428ef694cc964312bcd07838e0d0c7f77ac3ee23a07e1aa8ab9155b625600bcfb04274272c45aa52d8490878#npm:0.25.1"]
+          ],
+          "packagePeers": [
+            "pixi.js",
+            "prop-types",
+            "react",
+            "react-dom"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["@next/react-dev-overlay", [
         ["virtual:569066b0b9265ae33f28c7c8103cc2d5a7320e2a552558be2fc8094d0870583f744f1ae8c743173ca87c9f65632475ce3aaada39953f4ebf8cb7a043a3718c0e#npm:9.4.4", {
           "packageLocation": "./.yarn/$$virtual/@next-react-dev-overlay-virtual-fb0be24490/0/cache/@next-react-dev-overlay-npm-9.4.4-1316ee6bad-3.zip/node_modules/@next/react-dev-overlay/",
@@ -1714,6 +1746,423 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packagePeers": [
             "react-refresh",
             "webpack"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@pixi/accessibility", [
+        ["npm:5.2.4", {
+          "packageLocation": "./.yarn/cache/@pixi-accessibility-npm-5.2.4-5216d1cb41-3.zip/node_modules/@pixi/accessibility/",
+          "packageDependencies": [
+            ["@pixi/accessibility", "npm:5.2.4"],
+            ["@pixi/core", "npm:5.2.4"],
+            ["@pixi/display", "npm:5.2.4"],
+            ["@pixi/utils", "npm:5.2.4"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@pixi/app", [
+        ["npm:5.2.4", {
+          "packageLocation": "./.yarn/cache/@pixi-app-npm-5.2.4-1f30c0cdb3-3.zip/node_modules/@pixi/app/",
+          "packageDependencies": [
+            ["@pixi/app", "npm:5.2.4"],
+            ["@pixi/core", "npm:5.2.4"],
+            ["@pixi/display", "npm:5.2.4"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@pixi/constants", [
+        ["npm:5.2.4", {
+          "packageLocation": "./.yarn/cache/@pixi-constants-npm-5.2.4-8afb6eb626-3.zip/node_modules/@pixi/constants/",
+          "packageDependencies": [
+            ["@pixi/constants", "npm:5.2.4"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@pixi/core", [
+        ["npm:5.2.4", {
+          "packageLocation": "./.yarn/cache/@pixi-core-npm-5.2.4-c29ee5d0c3-3.zip/node_modules/@pixi/core/",
+          "packageDependencies": [
+            ["@pixi/core", "npm:5.2.4"],
+            ["@pixi/constants", "npm:5.2.4"],
+            ["@pixi/display", "npm:5.2.4"],
+            ["@pixi/math", "npm:5.2.4"],
+            ["@pixi/runner", "npm:5.2.4"],
+            ["@pixi/settings", "npm:5.2.4"],
+            ["@pixi/ticker", "npm:5.2.4"],
+            ["@pixi/utils", "npm:5.2.4"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@pixi/display", [
+        ["npm:5.2.4", {
+          "packageLocation": "./.yarn/cache/@pixi-display-npm-5.2.4-eed8e02c8d-3.zip/node_modules/@pixi/display/",
+          "packageDependencies": [
+            ["@pixi/display", "npm:5.2.4"],
+            ["@pixi/math", "npm:5.2.4"],
+            ["@pixi/settings", "npm:5.2.4"],
+            ["@pixi/utils", "npm:5.2.4"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@pixi/extract", [
+        ["npm:5.2.4", {
+          "packageLocation": "./.yarn/cache/@pixi-extract-npm-5.2.4-aa9a8235f6-3.zip/node_modules/@pixi/extract/",
+          "packageDependencies": [
+            ["@pixi/extract", "npm:5.2.4"],
+            ["@pixi/core", "npm:5.2.4"],
+            ["@pixi/math", "npm:5.2.4"],
+            ["@pixi/utils", "npm:5.2.4"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@pixi/filter-alpha", [
+        ["npm:5.2.4", {
+          "packageLocation": "./.yarn/cache/@pixi-filter-alpha-npm-5.2.4-21b8392bc5-3.zip/node_modules/@pixi/filter-alpha/",
+          "packageDependencies": [
+            ["@pixi/filter-alpha", "npm:5.2.4"],
+            ["@pixi/core", "npm:5.2.4"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@pixi/filter-blur", [
+        ["npm:5.2.4", {
+          "packageLocation": "./.yarn/cache/@pixi-filter-blur-npm-5.2.4-b8be156c93-3.zip/node_modules/@pixi/filter-blur/",
+          "packageDependencies": [
+            ["@pixi/filter-blur", "npm:5.2.4"],
+            ["@pixi/core", "npm:5.2.4"],
+            ["@pixi/settings", "npm:5.2.4"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@pixi/filter-color-matrix", [
+        ["npm:5.2.4", {
+          "packageLocation": "./.yarn/cache/@pixi-filter-color-matrix-npm-5.2.4-4c992917f7-3.zip/node_modules/@pixi/filter-color-matrix/",
+          "packageDependencies": [
+            ["@pixi/filter-color-matrix", "npm:5.2.4"],
+            ["@pixi/core", "npm:5.2.4"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@pixi/filter-displacement", [
+        ["npm:5.2.4", {
+          "packageLocation": "./.yarn/cache/@pixi-filter-displacement-npm-5.2.4-164f87f220-3.zip/node_modules/@pixi/filter-displacement/",
+          "packageDependencies": [
+            ["@pixi/filter-displacement", "npm:5.2.4"],
+            ["@pixi/core", "npm:5.2.4"],
+            ["@pixi/math", "npm:5.2.4"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@pixi/filter-fxaa", [
+        ["npm:5.2.4", {
+          "packageLocation": "./.yarn/cache/@pixi-filter-fxaa-npm-5.2.4-4f77290b64-3.zip/node_modules/@pixi/filter-fxaa/",
+          "packageDependencies": [
+            ["@pixi/filter-fxaa", "npm:5.2.4"],
+            ["@pixi/core", "npm:5.2.4"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@pixi/filter-noise", [
+        ["npm:5.2.4", {
+          "packageLocation": "./.yarn/cache/@pixi-filter-noise-npm-5.2.4-84a624ca6b-3.zip/node_modules/@pixi/filter-noise/",
+          "packageDependencies": [
+            ["@pixi/filter-noise", "npm:5.2.4"],
+            ["@pixi/core", "npm:5.2.4"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@pixi/graphics", [
+        ["npm:5.2.4", {
+          "packageLocation": "./.yarn/cache/@pixi-graphics-npm-5.2.4-b0065759ab-3.zip/node_modules/@pixi/graphics/",
+          "packageDependencies": [
+            ["@pixi/graphics", "npm:5.2.4"],
+            ["@pixi/constants", "npm:5.2.4"],
+            ["@pixi/core", "npm:5.2.4"],
+            ["@pixi/display", "npm:5.2.4"],
+            ["@pixi/math", "npm:5.2.4"],
+            ["@pixi/sprite", "npm:5.2.4"],
+            ["@pixi/utils", "npm:5.2.4"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@pixi/interaction", [
+        ["npm:5.2.4", {
+          "packageLocation": "./.yarn/cache/@pixi-interaction-npm-5.2.4-6d35445817-3.zip/node_modules/@pixi/interaction/",
+          "packageDependencies": [
+            ["@pixi/interaction", "npm:5.2.4"],
+            ["@pixi/core", "npm:5.2.4"],
+            ["@pixi/display", "npm:5.2.4"],
+            ["@pixi/math", "npm:5.2.4"],
+            ["@pixi/ticker", "npm:5.2.4"],
+            ["@pixi/utils", "npm:5.2.4"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@pixi/loaders", [
+        ["npm:5.2.4", {
+          "packageLocation": "./.yarn/cache/@pixi-loaders-npm-5.2.4-a2bdf04fc2-3.zip/node_modules/@pixi/loaders/",
+          "packageDependencies": [
+            ["@pixi/loaders", "npm:5.2.4"],
+            ["@pixi/core", "npm:5.2.4"],
+            ["@pixi/utils", "npm:5.2.4"],
+            ["resource-loader", "npm:3.0.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@pixi/math", [
+        ["npm:5.2.4", {
+          "packageLocation": "./.yarn/cache/@pixi-math-npm-5.2.4-a501c182f0-3.zip/node_modules/@pixi/math/",
+          "packageDependencies": [
+            ["@pixi/math", "npm:5.2.4"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@pixi/mesh", [
+        ["npm:5.2.4", {
+          "packageLocation": "./.yarn/cache/@pixi-mesh-npm-5.2.4-bc3711ab06-3.zip/node_modules/@pixi/mesh/",
+          "packageDependencies": [
+            ["@pixi/mesh", "npm:5.2.4"],
+            ["@pixi/constants", "npm:5.2.4"],
+            ["@pixi/core", "npm:5.2.4"],
+            ["@pixi/display", "npm:5.2.4"],
+            ["@pixi/math", "npm:5.2.4"],
+            ["@pixi/settings", "npm:5.2.4"],
+            ["@pixi/utils", "npm:5.2.4"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@pixi/mesh-extras", [
+        ["npm:5.2.4", {
+          "packageLocation": "./.yarn/cache/@pixi-mesh-extras-npm-5.2.4-0b07e81014-3.zip/node_modules/@pixi/mesh-extras/",
+          "packageDependencies": [
+            ["@pixi/mesh-extras", "npm:5.2.4"],
+            ["@pixi/constants", "npm:5.2.4"],
+            ["@pixi/core", "npm:5.2.4"],
+            ["@pixi/math", "npm:5.2.4"],
+            ["@pixi/mesh", "npm:5.2.4"],
+            ["@pixi/utils", "npm:5.2.4"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@pixi/mixin-cache-as-bitmap", [
+        ["npm:5.2.4", {
+          "packageLocation": "./.yarn/cache/@pixi-mixin-cache-as-bitmap-npm-5.2.4-7a5ddad545-3.zip/node_modules/@pixi/mixin-cache-as-bitmap/",
+          "packageDependencies": [
+            ["@pixi/mixin-cache-as-bitmap", "npm:5.2.4"],
+            ["@pixi/core", "npm:5.2.4"],
+            ["@pixi/display", "npm:5.2.4"],
+            ["@pixi/math", "npm:5.2.4"],
+            ["@pixi/settings", "npm:5.2.4"],
+            ["@pixi/sprite", "npm:5.2.4"],
+            ["@pixi/utils", "npm:5.2.4"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@pixi/mixin-get-child-by-name", [
+        ["npm:5.2.4", {
+          "packageLocation": "./.yarn/cache/@pixi-mixin-get-child-by-name-npm-5.2.4-4743aadefa-3.zip/node_modules/@pixi/mixin-get-child-by-name/",
+          "packageDependencies": [
+            ["@pixi/mixin-get-child-by-name", "npm:5.2.4"],
+            ["@pixi/display", "npm:5.2.4"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@pixi/mixin-get-global-position", [
+        ["npm:5.2.4", {
+          "packageLocation": "./.yarn/cache/@pixi-mixin-get-global-position-npm-5.2.4-9f5307ef74-3.zip/node_modules/@pixi/mixin-get-global-position/",
+          "packageDependencies": [
+            ["@pixi/mixin-get-global-position", "npm:5.2.4"],
+            ["@pixi/display", "npm:5.2.4"],
+            ["@pixi/math", "npm:5.2.4"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@pixi/particles", [
+        ["npm:5.2.4", {
+          "packageLocation": "./.yarn/cache/@pixi-particles-npm-5.2.4-f7b713d6b3-3.zip/node_modules/@pixi/particles/",
+          "packageDependencies": [
+            ["@pixi/particles", "npm:5.2.4"],
+            ["@pixi/constants", "npm:5.2.4"],
+            ["@pixi/core", "npm:5.2.4"],
+            ["@pixi/display", "npm:5.2.4"],
+            ["@pixi/math", "npm:5.2.4"],
+            ["@pixi/utils", "npm:5.2.4"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@pixi/polyfill", [
+        ["npm:5.2.4", {
+          "packageLocation": "./.yarn/cache/@pixi-polyfill-npm-5.2.4-8a4936ab88-3.zip/node_modules/@pixi/polyfill/",
+          "packageDependencies": [
+            ["@pixi/polyfill", "npm:5.2.4"],
+            ["es6-promise-polyfill", "npm:1.2.0"],
+            ["object-assign", "npm:4.1.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@pixi/prepare", [
+        ["npm:5.2.4", {
+          "packageLocation": "./.yarn/cache/@pixi-prepare-npm-5.2.4-7e71bd6cd2-3.zip/node_modules/@pixi/prepare/",
+          "packageDependencies": [
+            ["@pixi/prepare", "npm:5.2.4"],
+            ["@pixi/core", "npm:5.2.4"],
+            ["@pixi/display", "npm:5.2.4"],
+            ["@pixi/graphics", "npm:5.2.4"],
+            ["@pixi/settings", "npm:5.2.4"],
+            ["@pixi/text", "npm:5.2.4"],
+            ["@pixi/ticker", "npm:5.2.4"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@pixi/runner", [
+        ["npm:5.2.4", {
+          "packageLocation": "./.yarn/cache/@pixi-runner-npm-5.2.4-c5561a5d2c-3.zip/node_modules/@pixi/runner/",
+          "packageDependencies": [
+            ["@pixi/runner", "npm:5.2.4"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@pixi/settings", [
+        ["npm:5.2.4", {
+          "packageLocation": "./.yarn/cache/@pixi-settings-npm-5.2.4-1ef7bc761e-3.zip/node_modules/@pixi/settings/",
+          "packageDependencies": [
+            ["@pixi/settings", "npm:5.2.4"],
+            ["ismobilejs", "npm:1.1.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@pixi/sprite", [
+        ["npm:5.2.4", {
+          "packageLocation": "./.yarn/cache/@pixi-sprite-npm-5.2.4-9c6d898ecb-3.zip/node_modules/@pixi/sprite/",
+          "packageDependencies": [
+            ["@pixi/sprite", "npm:5.2.4"],
+            ["@pixi/constants", "npm:5.2.4"],
+            ["@pixi/core", "npm:5.2.4"],
+            ["@pixi/display", "npm:5.2.4"],
+            ["@pixi/math", "npm:5.2.4"],
+            ["@pixi/settings", "npm:5.2.4"],
+            ["@pixi/utils", "npm:5.2.4"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@pixi/sprite-animated", [
+        ["npm:5.2.4", {
+          "packageLocation": "./.yarn/cache/@pixi-sprite-animated-npm-5.2.4-fa2fe50f4f-3.zip/node_modules/@pixi/sprite-animated/",
+          "packageDependencies": [
+            ["@pixi/sprite-animated", "npm:5.2.4"],
+            ["@pixi/core", "npm:5.2.4"],
+            ["@pixi/sprite", "npm:5.2.4"],
+            ["@pixi/ticker", "npm:5.2.4"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@pixi/sprite-tiling", [
+        ["npm:5.2.4", {
+          "packageLocation": "./.yarn/cache/@pixi-sprite-tiling-npm-5.2.4-41c3925404-3.zip/node_modules/@pixi/sprite-tiling/",
+          "packageDependencies": [
+            ["@pixi/sprite-tiling", "npm:5.2.4"],
+            ["@pixi/constants", "npm:5.2.4"],
+            ["@pixi/core", "npm:5.2.4"],
+            ["@pixi/display", "npm:5.2.4"],
+            ["@pixi/math", "npm:5.2.4"],
+            ["@pixi/sprite", "npm:5.2.4"],
+            ["@pixi/utils", "npm:5.2.4"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@pixi/spritesheet", [
+        ["npm:5.2.4", {
+          "packageLocation": "./.yarn/cache/@pixi-spritesheet-npm-5.2.4-a14e20e433-3.zip/node_modules/@pixi/spritesheet/",
+          "packageDependencies": [
+            ["@pixi/spritesheet", "npm:5.2.4"],
+            ["@pixi/core", "npm:5.2.4"],
+            ["@pixi/loaders", "npm:5.2.4"],
+            ["@pixi/math", "npm:5.2.4"],
+            ["@pixi/utils", "npm:5.2.4"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@pixi/text", [
+        ["npm:5.2.4", {
+          "packageLocation": "./.yarn/cache/@pixi-text-npm-5.2.4-bc9d15414d-3.zip/node_modules/@pixi/text/",
+          "packageDependencies": [
+            ["@pixi/text", "npm:5.2.4"],
+            ["@pixi/core", "npm:5.2.4"],
+            ["@pixi/math", "npm:5.2.4"],
+            ["@pixi/settings", "npm:5.2.4"],
+            ["@pixi/sprite", "npm:5.2.4"],
+            ["@pixi/utils", "npm:5.2.4"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@pixi/text-bitmap", [
+        ["npm:5.2.4", {
+          "packageLocation": "./.yarn/cache/@pixi-text-bitmap-npm-5.2.4-6e11eaf197-3.zip/node_modules/@pixi/text-bitmap/",
+          "packageDependencies": [
+            ["@pixi/text-bitmap", "npm:5.2.4"],
+            ["@pixi/core", "npm:5.2.4"],
+            ["@pixi/display", "npm:5.2.4"],
+            ["@pixi/loaders", "npm:5.2.4"],
+            ["@pixi/math", "npm:5.2.4"],
+            ["@pixi/settings", "npm:5.2.4"],
+            ["@pixi/sprite", "npm:5.2.4"],
+            ["@pixi/utils", "npm:5.2.4"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@pixi/ticker", [
+        ["npm:5.2.4", {
+          "packageLocation": "./.yarn/cache/@pixi-ticker-npm-5.2.4-7af4feb70c-3.zip/node_modules/@pixi/ticker/",
+          "packageDependencies": [
+            ["@pixi/ticker", "npm:5.2.4"],
+            ["@pixi/settings", "npm:5.2.4"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@pixi/utils", [
+        ["npm:5.2.4", {
+          "packageLocation": "./.yarn/cache/@pixi-utils-npm-5.2.4-e0792211f3-3.zip/node_modules/@pixi/utils/",
+          "packageDependencies": [
+            ["@pixi/utils", "npm:5.2.4"],
+            ["@pixi/constants", "npm:5.2.4"],
+            ["@pixi/settings", "npm:5.2.4"],
+            ["earcut", "npm:2.2.2"],
+            ["eventemitter3", "npm:3.1.2"],
+            ["url", "npm:0.11.0"]
           ],
           "linkType": "HARD",
         }]
@@ -2415,6 +2864,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/array-unique-npm-0.3.2-9f62c6ac93-3.zip/node_modules/array-unique/",
           "packageDependencies": [
             ["array-unique", "npm:0.3.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["asap", [
+        ["npm:2.0.6", {
+          "packageLocation": "./.yarn/cache/asap-npm-2.0.6-36714d439d-3.zip/node_modules/asap/",
+          "packageDependencies": [
+            ["asap", "npm:2.0.6"]
           ],
           "linkType": "HARD",
         }]
@@ -3428,6 +3886,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["core-js", [
+        ["npm:2.6.11", {
+          "packageLocation": "./.yarn/unplugged/core-js-npm-2.6.11-15178ded27/node_modules/core-js/",
+          "packageDependencies": [
+            ["core-js", "npm:2.6.11"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["core-js-compat", [
         ["npm:3.6.5", {
           "packageLocation": "./.yarn/cache/core-js-compat-npm-3.6.5-f6ba2f501c-3.zip/node_modules/core-js-compat/",
@@ -3956,6 +4423,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["diffy-squares", "workspace:."],
+            ["@inlet/react-pixi", "virtual:07eee5b63497c2c6f119fa5f9b8800953a4f0498190258d262944c738e8a1370027a6eebcb364b5cb77cef9bb97c12dfd5ba1a3f0b847be146d1dbe9d46cde16#npm:4.1.1"],
             ["@types/node", "npm:14.0.9"],
             ["@types/ramda", "npm:0.27.6"],
             ["@types/react", "npm:16.9.35"],
@@ -3968,6 +4436,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-react", "virtual:07eee5b63497c2c6f119fa5f9b8800953a4f0498190258d262944c738e8a1370027a6eebcb364b5cb77cef9bb97c12dfd5ba1a3f0b847be146d1dbe9d46cde16#npm:7.20.0"],
             ["eslint-plugin-react-hooks", "virtual:07eee5b63497c2c6f119fa5f9b8800953a4f0498190258d262944c738e8a1370027a6eebcb364b5cb77cef9bb97c12dfd5ba1a3f0b847be146d1dbe9d46cde16#npm:4.0.4"],
             ["next", "virtual:07eee5b63497c2c6f119fa5f9b8800953a4f0498190258d262944c738e8a1370027a6eebcb364b5cb77cef9bb97c12dfd5ba1a3f0b847be146d1dbe9d46cde16#npm:9.4.4"],
+            ["pixi.js", "npm:5.2.4"],
             ["prettier", "npm:2.0.5"],
             ["ramda", "npm:0.27.0"],
             ["react", "npm:16.13.1"],
@@ -4085,6 +4554,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["earcut", [
+        ["npm:2.2.2", {
+          "packageLocation": "./.yarn/cache/earcut-npm-2.2.2-b2eb138672-3.zip/node_modules/earcut/",
+          "packageDependencies": [
+            ["earcut", "npm:2.2.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["ecc-jsbn", [
         ["npm:0.1.2", {
           "packageLocation": "./.yarn/cache/ecc-jsbn-npm-0.1.2-85b7a7be89-3.zip/node_modules/ecc-jsbn/",
@@ -4149,6 +4627,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/emojis-list-npm-3.0.0-7faa48e6fd-3.zip/node_modules/emojis-list/",
           "packageDependencies": [
             ["emojis-list", "npm:3.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["encoding", [
+        ["npm:0.1.12", {
+          "packageLocation": "./.yarn/cache/encoding-npm-0.1.12-1a16b5c5e9-3.zip/node_modules/encoding/",
+          "packageDependencies": [
+            ["encoding", "npm:0.1.12"],
+            ["iconv-lite", "npm:0.4.24"]
           ],
           "linkType": "HARD",
         }]
@@ -4265,6 +4753,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["d", "npm:1.0.1"],
             ["es5-ext", "npm:0.10.53"],
             ["es6-symbol", "npm:3.1.3"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["es6-promise-polyfill", [
+        ["npm:1.2.0", {
+          "packageLocation": "./.yarn/cache/es6-promise-polyfill-npm-1.2.0-8630928363-3.zip/node_modules/es6-promise-polyfill/",
+          "packageDependencies": [
+            ["es6-promise-polyfill", "npm:1.2.0"]
           ],
           "linkType": "HARD",
         }]
@@ -4506,6 +5003,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["eventemitter3", [
+        ["npm:3.1.2", {
+          "packageLocation": "./.yarn/cache/eventemitter3-npm-3.1.2-a68b03e1ea-3.zip/node_modules/eventemitter3/",
+          "packageDependencies": [
+            ["eventemitter3", "npm:3.1.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["events", [
         ["npm:3.1.0", {
           "packageLocation": "./.yarn/cache/events-npm-3.1.0-79a3e6a9cd-3.zip/node_modules/events/",
@@ -4651,6 +5157,32 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/fast-levenshtein-npm-2.0.6-fcd74b8df5-3.zip/node_modules/fast-levenshtein/",
           "packageDependencies": [
             ["fast-levenshtein", "npm:2.0.6"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["fbjs", [
+        ["npm:1.0.0", {
+          "packageLocation": "./.yarn/cache/fbjs-npm-1.0.0-4f480c1eca-3.zip/node_modules/fbjs/",
+          "packageDependencies": [
+            ["fbjs", "npm:1.0.0"],
+            ["core-js", "npm:2.6.11"],
+            ["fbjs-css-vars", "npm:1.0.2"],
+            ["isomorphic-fetch", "npm:2.2.1"],
+            ["loose-envify", "npm:1.4.0"],
+            ["object-assign", "npm:4.1.1"],
+            ["promise", "npm:7.3.1"],
+            ["setimmediate", "npm:1.0.5"],
+            ["ua-parser-js", "npm:0.7.21"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["fbjs-css-vars", [
+        ["npm:1.0.2", {
+          "packageLocation": "./.yarn/cache/fbjs-css-vars-npm-1.0.2-c233f16598-3.zip/node_modules/fbjs-css-vars/",
+          "packageDependencies": [
+            ["fbjs-css-vars", "npm:1.0.2"]
           ],
           "linkType": "HARD",
         }]
@@ -5738,6 +6270,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["is-stream", [
+        ["npm:1.1.0", {
+          "packageLocation": "./.yarn/cache/is-stream-npm-1.1.0-818ecbf6bb-3.zip/node_modules/is-stream/",
+          "packageDependencies": [
+            ["is-stream", "npm:1.1.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["is-string", [
         ["npm:1.0.5", {
           "packageLocation": "./.yarn/cache/is-string-npm-1.0.5-782e9359f5-3.zip/node_modules/is-string/",
@@ -5812,6 +6353,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["ismobilejs", [
+        ["npm:1.1.1", {
+          "packageLocation": "./.yarn/cache/ismobilejs-npm-1.1.1-c0d1011f3b-3.zip/node_modules/ismobilejs/",
+          "packageDependencies": [
+            ["ismobilejs", "npm:1.1.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["isobject", [
         ["npm:2.1.0", {
           "packageLocation": "./.yarn/cache/isobject-npm-2.1.0-2798cf0d94-3.zip/node_modules/isobject/",
@@ -5825,6 +6375,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/isobject-npm-3.0.1-8145901fd2-3.zip/node_modules/isobject/",
           "packageDependencies": [
             ["isobject", "npm:3.0.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["isomorphic-fetch", [
+        ["npm:2.2.1", {
+          "packageLocation": "./.yarn/cache/isomorphic-fetch-npm-2.2.1-46b4db5d7b-3.zip/node_modules/isomorphic-fetch/",
+          "packageDependencies": [
+            ["isomorphic-fetch", "npm:2.2.1"],
+            ["node-fetch", "npm:1.7.3"],
+            ["whatwg-fetch", "npm:3.0.0"]
           ],
           "linkType": "HARD",
         }]
@@ -6357,6 +6918,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["mini-signals", [
+        ["npm:1.2.0", {
+          "packageLocation": "./.yarn/cache/mini-signals-npm-1.2.0-eba020cdbe-3.zip/node_modules/mini-signals/",
+          "packageDependencies": [
+            ["mini-signals", "npm:1.2.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["minimalistic-assert", [
         ["npm:1.0.1", {
           "packageLocation": "./.yarn/cache/minimalistic-assert-npm-1.0.1-dc8bb23d29-3.zip/node_modules/minimalistic-assert/",
@@ -6675,6 +7245,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["node-fetch", [
+        ["npm:1.7.3", {
+          "packageLocation": "./.yarn/cache/node-fetch-npm-1.7.3-eb8372f991-3.zip/node_modules/node-fetch/",
+          "packageDependencies": [
+            ["node-fetch", "npm:1.7.3"],
+            ["encoding", "npm:0.1.12"],
+            ["is-stream", "npm:1.1.0"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:2.6.0", {
           "packageLocation": "./.yarn/cache/node-fetch-npm-2.6.0-29c7a53447-3.zip/node_modules/node-fetch/",
           "packageDependencies": [
@@ -7172,6 +7751,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["parse-uri", [
+        ["npm:1.0.0", {
+          "packageLocation": "./.yarn/cache/parse-uri-npm-1.0.0-7453bb696a-3.zip/node_modules/parse-uri/",
+          "packageDependencies": [
+            ["parse-uri", "npm:1.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["pascalcase", [
         ["npm:0.1.1", {
           "packageLocation": "./.yarn/cache/pascalcase-npm-0.1.1-d04964fcda-3.zip/node_modules/pascalcase/",
@@ -7279,6 +7867,49 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/pify-npm-4.0.1-062756097b-3.zip/node_modules/pify/",
           "packageDependencies": [
             ["pify", "npm:4.0.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["pixi.js", [
+        ["npm:5.2.4", {
+          "packageLocation": "./.yarn/cache/pixi.js-npm-5.2.4-c233c058f7-3.zip/node_modules/pixi.js/",
+          "packageDependencies": [
+            ["pixi.js", "npm:5.2.4"],
+            ["@pixi/accessibility", "npm:5.2.4"],
+            ["@pixi/app", "npm:5.2.4"],
+            ["@pixi/constants", "npm:5.2.4"],
+            ["@pixi/core", "npm:5.2.4"],
+            ["@pixi/display", "npm:5.2.4"],
+            ["@pixi/extract", "npm:5.2.4"],
+            ["@pixi/filter-alpha", "npm:5.2.4"],
+            ["@pixi/filter-blur", "npm:5.2.4"],
+            ["@pixi/filter-color-matrix", "npm:5.2.4"],
+            ["@pixi/filter-displacement", "npm:5.2.4"],
+            ["@pixi/filter-fxaa", "npm:5.2.4"],
+            ["@pixi/filter-noise", "npm:5.2.4"],
+            ["@pixi/graphics", "npm:5.2.4"],
+            ["@pixi/interaction", "npm:5.2.4"],
+            ["@pixi/loaders", "npm:5.2.4"],
+            ["@pixi/math", "npm:5.2.4"],
+            ["@pixi/mesh", "npm:5.2.4"],
+            ["@pixi/mesh-extras", "npm:5.2.4"],
+            ["@pixi/mixin-cache-as-bitmap", "npm:5.2.4"],
+            ["@pixi/mixin-get-child-by-name", "npm:5.2.4"],
+            ["@pixi/mixin-get-global-position", "npm:5.2.4"],
+            ["@pixi/particles", "npm:5.2.4"],
+            ["@pixi/polyfill", "npm:5.2.4"],
+            ["@pixi/prepare", "npm:5.2.4"],
+            ["@pixi/runner", "npm:5.2.4"],
+            ["@pixi/settings", "npm:5.2.4"],
+            ["@pixi/sprite", "npm:5.2.4"],
+            ["@pixi/sprite-animated", "npm:5.2.4"],
+            ["@pixi/sprite-tiling", "npm:5.2.4"],
+            ["@pixi/spritesheet", "npm:5.2.4"],
+            ["@pixi/text", "npm:5.2.4"],
+            ["@pixi/text-bitmap", "npm:5.2.4"],
+            ["@pixi/ticker", "npm:5.2.4"],
+            ["@pixi/utils", "npm:5.2.4"]
           ],
           "linkType": "HARD",
         }]
@@ -7855,6 +8486,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["promise", [
+        ["npm:7.3.1", {
+          "packageLocation": "./.yarn/cache/promise-npm-7.3.1-5d81d474c0-3.zip/node_modules/promise/",
+          "packageDependencies": [
+            ["promise", "npm:7.3.1"],
+            ["asap", "npm:2.0.6"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["promise-inflight", [
         ["npm:1.0.1", {
           "packageLocation": "./.yarn/cache/promise-inflight-npm-1.0.1-5bb925afac-3.zip/node_modules/promise-inflight/",
@@ -8087,6 +8728,23 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/react-is-npm-16.13.1-a9b9382b4f-3.zip/node_modules/react-is/",
           "packageDependencies": [
             ["react-is", "npm:16.13.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["react-reconciler", [
+        ["virtual:c2d00c9bda422fc453d1e1bb40c7b4621fae6cfd428ef694cc964312bcd07838e0d0c7f77ac3ee23a07e1aa8ab9155b625600bcfb04274272c45aa52d8490878#npm:0.25.1", {
+          "packageLocation": "./.yarn/$$virtual/react-reconciler-virtual-5af709a42f/0/cache/react-reconciler-npm-0.25.1-d7d3c90754-3.zip/node_modules/react-reconciler/",
+          "packageDependencies": [
+            ["react-reconciler", "virtual:c2d00c9bda422fc453d1e1bb40c7b4621fae6cfd428ef694cc964312bcd07838e0d0c7f77ac3ee23a07e1aa8ab9155b625600bcfb04274272c45aa52d8490878#npm:0.25.1"],
+            ["loose-envify", "npm:1.4.0"],
+            ["object-assign", "npm:4.1.1"],
+            ["prop-types", "npm:15.7.2"],
+            ["react", "npm:16.13.1"],
+            ["scheduler", "npm:0.19.1"]
+          ],
+          "packagePeers": [
+            "react"
           ],
           "linkType": "HARD",
         }]
@@ -8374,6 +9032,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["rework", "npm:1.0.1"],
             ["rework-visit", "npm:1.0.0"],
             ["source-map", "npm:0.6.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["resource-loader", [
+        ["npm:3.0.1", {
+          "packageLocation": "./.yarn/cache/resource-loader-npm-3.0.1-b19650aad7-3.zip/node_modules/resource-loader/",
+          "packageDependencies": [
+            ["resource-loader", "npm:3.0.1"],
+            ["mini-signals", "npm:1.2.0"],
+            ["parse-uri", "npm:1.0.0"]
           ],
           "linkType": "HARD",
         }]
@@ -9666,6 +10335,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/typescript-patch-ad951acdf1-3.zip/node_modules/typescript/",
           "packageDependencies": [
             ["typescript", "patch:typescript@npm%3A3.9.4#builtin<compat/typescript>::version=3.9.4&hash=8cac75"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["ua-parser-js", [
+        ["npm:0.7.21", {
+          "packageLocation": "./.yarn/cache/ua-parser-js-npm-0.7.21-b6acc81503-3.zip/node_modules/ua-parser-js/",
+          "packageDependencies": [
+            ["ua-parser-js", "npm:0.7.21"]
           ],
           "linkType": "HARD",
         }]
