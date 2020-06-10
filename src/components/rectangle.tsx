@@ -1,4 +1,4 @@
-import React, { FC, useCallback, useMemo } from 'react'
+import React, { FC, useCallback, useMemo, useState } from 'react'
 import { Graphics, SCALE_MODES } from 'pixi.js'
 import { Sprite, useApp } from '@inlet/react-pixi'
 
@@ -10,8 +10,9 @@ type Props = {
   fill: number
 }
 
-const Rectangle: FC<Props> = ({ width, height, fill, ...props }) => {
+const Rectangle: FC<Props> = ({ width, height, fill: initialFill, ...props }) => {
   const app = useApp()
+  const [fill, setFill] = useState(initialFill)
   const graphics = useMemo(() => new Graphics(), [])
   const texture = useMemo(() => {
     graphics.clear()
@@ -22,17 +23,16 @@ const Rectangle: FC<Props> = ({ width, height, fill, ...props }) => {
   }, [app, graphics, fill, width, height])
 
   const click = useCallback(() => {
-    // eslint-disable-next-line no-console
-    console.log('click!')
-  }, [])
+    setFill(f => (f === initialFill ? 0x00ff00 : initialFill))
+  }, [initialFill, setFill])
 
   return (
     <Sprite
       {...props}
-      interactive
       click={click}
-      texture={texture}
       height={height}
+      interactive
+      texture={texture}
       width={width}
     />
   )
