@@ -11,16 +11,6 @@ const Page: FC = () => (
       <legend>canvas</legend>
       <Canvas />
     </fieldset>
-    <style global jsx>{`
-      html,
-      body {
-        background: #22212c;
-      }
-
-      * {
-        color: #f8f8f2;
-      }
-    `}</style>
   </div>
 )
 export default Page

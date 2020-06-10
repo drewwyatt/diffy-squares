@@ -4,7 +4,7 @@ import Rectangle from './rectangle'
 
 const Canvas: FC = () => (
   <Stage>
-    <Rectangle x={100} y={100} width={500} height={300} fill={0xff0000} />
+    <Rectangle x={100} y={100} width={100} height={100} fill={0xff0000} />
   </Stage>
 )
 

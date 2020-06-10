@@ -1,0 +1,21 @@
+:root {
+  --background: #22212c;
+  --foreground: #f8f8f2;
+  --cyan: #80ffea;
+  --green: #8aff80;
+  --orange: #ffca80;
+  --pink: #ff80bf;
+  --purple: #9580ff;
+  --red: #ff9580;
+  --yellow: #ffff80;
+}
+
+html,
+body {
+  background: var(--background);
+  height: 100%;
+}
+
+* {
+  color: var(--foreground);
+}
