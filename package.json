@@ -28,7 +28,7 @@
     "@inlet/react-pixi": "^4.1.1",
     "@typescript-eslint/eslint-plugin": "^3.1.0",
     "@typescript-eslint/parser": "^3.1.0",
-    "next": "^9.4.4",
+    "next": "^11.1.0",
     "pixi.js": "^5.2.4",
     "ramda": "^0.27.0",
     "react": "^16.13.1",
